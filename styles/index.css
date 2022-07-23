@@ -1,0 +1,263 @@
+@import "./normalize.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.tabs {
+    font-size: 20px;
+    width: 100%;
+    background: linear-gradient(165deg, rgba(19,255,248,1) 0%, rgba(9,252,151,1) 85%);
+}
+
+.tabs__nav {
+    border-bottom: 1px solid #000000;
+}
+
+.tabs__btn {
+    font-size: 20px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px;
+    margin: 0;
+}
+
+.tabs__btn.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration-line: underline;
+}
+
+
+.tabs__content {
+    padding: 30px;
+}
+
+.tabs__pane {
+    display: none;
+}
+
+.tabs__pane.active {
+    display: block;
+}
+
+
+.form {
+    font-size: 16px;
+    /*width: 100%;*/
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+span {
+    margin-bottom: 10px;
+}
+
+.input_btn {
+    font-size: 18px;
+    max-width: 560px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(178, 182, 217, 0.2);
+    padding: 8px;
+    margin-bottom: 50px;
+}
+
+.text_content {
+    font-size: 17px;
+    max-width: 560px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(178, 182, 217, 0.2);
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+
+.create_tab {
+    font-size: 16px;
+    margin: 0 auto;
+    width: 180px;
+    padding: 12px 5px;
+    border: none;
+    background-color: navy;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.create_tab:hover {
+    background-color: blue;
+}
+
+@media (min-width: 576px) {
+    .tabs {
+        font-size: 18px;
+    }
+
+    .tabs__btn {
+        font-size: 18px;
+    }
+
+    .form {
+        font-size: 16px;
+        margin-top: 120px;
+    }
+
+    .input_btn {
+        font-size: 17px;
+        margin-bottom: 60px;
+        max-width: 740px;
+    }
+
+    .text_content {
+        font-size: 16px;
+        margin-bottom: 100px;
+        max-width: 740px;
+    }
+
+    .create_tab {
+        font-size: 16px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .tabs {
+        max-width: 890px;
+        font-size: 19px;
+    }
+
+    .tabs__btn {
+        font-size: 19px;
+    }
+
+    .form {
+        font-size: 16px;
+    }
+
+    .input_btn {
+        max-width: 970px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-bottom: 40px;
+    }
+
+    .text_content {
+        max-width: 970px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-bottom: 80px;
+    }
+
+    .create_tab {
+        font-size: 18px;
+        padding: 14px 10px;
+        width: 250px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        padding: 40px;
+    }
+
+    .tabs {
+        max-width: 1160px;
+        font-size: 20px;
+    }
+
+    .tabs__btn {
+        font-size: 20px;
+    }
+
+    .form {
+        font-size: 18px;
+        margin-top: 100px;
+    }
+
+    span {
+        margin-bottom: 10px;
+    }
+
+    .input_btn {
+        font-size: 20px;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        max-width: 1160px;
+    }
+
+    .text_content {
+        font-size: 19px;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        max-width: 1160px;
+    }
+
+    .create_tab {
+        font-size: 19px;
+        padding:  15px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 50px 135px;
+    }
+
+    .tabs {
+        margin: 0 auto;
+        font-size: 16px;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .tabs__btn {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .form {
+        margin: 100px auto 0 auto;
+        font-size: 16px;
+        /*margin-top: 100px;*/
+    }
+
+    span {
+        margin-bottom: 15px;
+    }
+
+    .input_btn {
+        font-size: 16px;
+        width: 800px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .text_content {
+        font-size: 16px;
+        width: 800px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+
+    .create_tab {
+        font-size: 16px;
+        width: 250px;
+        padding: 13px;
+        border-radius: 10px;
+    }
+
+}
